@@ -18,20 +18,51 @@
       background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
     }
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-body {
+      flex-grow: 1;
+    }
     .card:hover {
       transform: scale(1.05);
       transition: 0.3s;
+    }
+    .skills {
+      background: #f8f9fa;
+      padding: 50px 0;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
     }
   </style>
 </head>
 <body>
 <header class="hero">
   <div>
-    <h1>Ciao, sono Rudi</h1>
-    <p>Laureando in Informatica | Full-Stack Developer</p>
+    <h1>Ciao, sono Giuseppe Rudi</h1>
+    <p> IT Specialist</p>
     <a href="#projects" class="btn btn-light mt-3">Scopri i miei progetti</a>
+    <div class="mt-4">
+      <a href="https://www.linkedin.com/in/giuseppe-rudi-77a066244/" class="btn btn-primary mx-2" target="_blank">LinkedIn</a>
+      <a href="https://github.com/GiuseppeRudi" class="btn btn-dark mx-2" target="_blank">GitHub</a>
+    </div>
   </div>
 </header>
+
+<section class="skills text-center">
+  <div class="container">
+    <h2 class="mb-4">Competenze</h2>
+    <p><strong>Back-end:</strong> Java, Spring Boot, Node.js</p>
+    <p><strong>Front-end:</strong> Angular, HTML, CSS, Bootstrap</p>
+    <p><strong>Database:</strong> PostgreSQL, MySQL</p>
+    <p><strong>Altro:</strong> Git, Docker, REST API</p>
+  </div>
+</section>
 
 <section id="projects" class="container py-5">
   <h2 class="text-center mb-4">Progetti</h2>
@@ -41,33 +72,85 @@
         <div class="card-body">
           <h5 class="card-title">EasyHome</h5>
           <p class="card-text">Piattaforma web per la gestione di annunci immobiliari.</p>
-          <a href="https://github.com/tuo-username/easyhome" class="btn btn-primary" target="_blank">GitHub</a>
+          <p><strong>Stack:</strong> Java, Spring Boot, Angular, PostgreSQL,TypeScript, API</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://github.com/GiuseppeRudi/easyhome-frontend" class="btn btn-primary" target="_blank">GitHub Front-End</a>
+          <a href="https://github.com/GiuseppeRudi/easyhome-backend" class="btn btn-dark" target="_blank">GitHub Back-End</a>
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Pixel Jump</h5>
-          <p class="card-text">Gioco in Java Swing ispirato a Minecraft.</p>
-          <a href="https://github.com/tuo-username/pixeljump" class="btn btn-primary" target="_blank">GitHub</a>
+          <h5 class="card-title">Infrastruttura di rete</h5>
+          <p class="card-text">Realizzazione attraverso GNS3 di tutte le fasi di una infrastruttura.</p>
+          <p><strong>Stack:</strong> Indirizzi IP, MascherE di rete, Firewalling</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://github.com/GiuseppeRudi/gns3" class="btn btn-primary" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">GNS3 Network</h5>
-          <p class="card-text">Simulazione di rete con firewall e gestione IP.</p>
-          <a href="https://github.com/tuo-username/gns3" class="btn btn-primary" target="_blank">GitHub</a>
+          <h5 class="card-title">ProNet</h5>
+          <p class="card-text">Documentazione per la creazione di una piattaforma di Professional Networking.</p>
+          <p><strong>Stack:</strong> Casi d'uso, UML, SSD di sistema, Contratti</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://github.com/GiuseppeRudi/ProNet" class="btn btn-primary" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">PixelJump</h5>
+          <p class="card-text">Gioco ispirato a Minecraft.</p>
+          <p><strong>Stack:</strong> Java Swing </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://github.com/GiuseppeRudi/pixeljump" class="btn btn-primary" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">RistoranteZeno</h5>
+          <p class="card-text">Piattaforma web per la gestione dei tavoli e della cucina di un ristorante.</p>
+          <p><strong>Stack:</strong> Java, Spring Boot, AJAX, PostgreSQL, JavaScript, HTML, CSS</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://github.com/GiuseppeRudi/ristorantezeno" class="btn btn-primary" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Spingere</h5>
+          <p class="card-text">Studio della persistenza per la realizzazione di una piattaforma per la visione di film e serie tv.</p>
+          <p><strong>Stack:</strong> MySQL </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="https://github.com/GiuseppeRudi/spingere" class="btn btn-primary" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer class="text-center py-3 bg-dark text-light">
-  <p>&copy; 2025 Rudi - <a href="https://github.com/tuo-username" class="text-light">GitHub</a></p>
+  <p>&copy; 2025 Rudi - <a href="https://github.com/GiuseppeRudi" class="text-light">GitHub</a></p>
 </footer>
 </body>
 </html>
